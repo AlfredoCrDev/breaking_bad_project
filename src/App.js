@@ -1,34 +1,21 @@
 import './App.css';
-import React, {useEffect} from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import Home from './Home';
 import Main from './Main';
-import Axios from "axios"; 
 
+import './styles/style.scss';
 
 
 function App() {
-
-  useEffect(() => {
-    fetch(); 
-    }); 
-    
-    const fetch = async() => {
-        try {
-            const response = await Axios.get('https://www.breakingbadapi.com/api/characters');
-            console.log(response);
-          } catch (error) {
-            console.error(error);
-          }
-    }
-  return (
+return(
+  <div>
     <Router>
-
       <Route exact path="/" component={Home} />
       <Route path="/breaking-bad" component={Main} />
-
   </Router>
-  );
+  </div>
+)
+
 }
 
 export default App;
