@@ -1,15 +1,13 @@
 import React from 'react'
-import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-import bg from './img/bg.jpg';
+import './styles/style.scss';
 
 const Home = () => {
   return (
-    <div>Home
-      <img src={bg} />
+    <div className='container-home'>
       <Link to='/breaking-bad'>
-      <Button variant="contained">Contained</Button>
+      <button className='home__button'>ENTRAR</button>
       </Link>
     </div>
     
