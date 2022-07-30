@@ -1,6 +1,12 @@
 // import React from 'react'
 import React, {useEffect, useState} from "react";
 import Axios from "axios"; 
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import '../styles/style.scss'
 
 const Searcher = () => {
  // ESTADOS
@@ -45,42 +51,44 @@ const [busqueda, setBusqueda] = useState("");
 },[]); 
 
   return (
+    <>
+    <div className="containerInput">
+    <input
+      className="form-control inputBuscar"
+      value={busqueda}
+      placeholder="Búsqueda por Nombre o Nickname"
+      onChange={handleChange}
+      />
+  </div>
     <div className='App'>
-      <div className="containerInput">
-        <input
-          className="form-control inputBuscar"
-          value={busqueda}
-          placeholder="Búsqueda por Nombre o Nickname"
-          onChange={handleChange}
-          />
-        <button className="btn btn-success">
-        </button>
-      </div>
+    
+      {usuarios && usuarios.map(usuario => (
+            <div key = {usuario.char_id}>
+  <Card sx={{ maxWidth: 345 }}>
 
-      <div className='table-responsive'>
-        <table className='table table-sm table-bordered'>
-          <thead>
-            <tr>
-              <th>Imagen</th>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Nickname</th>
-            </tr>
-          </thead>
-          <tbody>
-            {usuarios && 
-            usuarios.map((usuario) =>(
-              <tr key={usuario.char_id}>
-                <td>{usuario.img}</td>
-                <td>{usuario.char_id}</td>
-                <td>{usuario.name}</td>
-                <td>{usuario.nickname}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+  <CardActionArea>
+    <CardMedia
+      component="img"
+      height="450"
+      width="100"
+      image={usuario.img}
+    />
+    <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+      {usuario.name}
+      </Typography>
+      <Typography variant="body2" color="text.secondary">
+       {usuario.nickname}
+      </Typography>
+    </CardContent>
+  </CardActionArea>
+
+</Card>
+</div>
+      ))}
+    
     </div>
+    </>
   )
 }
 

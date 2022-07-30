@@ -6,9 +6,11 @@ import './styles/style.scss';
 const Home = () => {
   return (
     <div className='container-home'>
+      <div className='button'>
       <Link to='/breaking-bad'>
       <button className='home__button'>ENTRAR</button>
       </Link>
+      </div>
     </div>
     
   )

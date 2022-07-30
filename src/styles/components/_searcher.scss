@@ -1,0 +1,52 @@
+.App {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 3rem;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: black;
+    background: linear-gradient(90deg,
+            rgba(9, 48, 9, 1) 0%,
+            rgba(13, 62, 16, 1) 35%,
+            rgba(31, 96, 50, 1) 100%);
+    padding: 40px 30px;
+}
+
+.inputBuscar {
+    width: 50% !important;
+}
+
+.containerInput {
+    align-items: end;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(90deg,
+            rgba(9, 48, 9, 1) 0%,
+            rgba(13, 62, 16, 1) 35%,
+            rgba(31, 96, 50, 1) 100%);
+    padding: 1rem;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 988px) {
+
+    .inputBuscar {
+        width: 100% !important;
+    }
+
+    .containerInput {
+        padding-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .App {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
