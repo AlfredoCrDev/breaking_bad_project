@@ -1,0 +1,43 @@
+@import './_base.scss';
+
+
+
+.container-home {
+  background-image: url("./../../img/bg.jpg");
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  gap: 0px 0px; 
+grid-template-areas: 
+". . ."
+". . ."
+". button ."
+;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  .button {
+    grid-area: button; 
+    text-align: center;
+  }
+  button {
+    border-radius: 7px;
+    color: white;
+    font-size: 1.5rem;
+    background: $color-fondo;
+    padding: 0.5rem 1rem;
+
+  }
+
+  button:hover {
+    transition: all 0.4s ease-in-out;
+    transform: translate(0, -5px);
+    -webkit-transform: translate(0, -5px);
+    box-shadow: -7px 7px rgba(16, 75, 0, 0.5);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+}
