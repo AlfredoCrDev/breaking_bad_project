@@ -9,10 +9,10 @@ const Footer = () => {
     <>
       <div className="footer-distributed">
         <div className="footer-right">
-          <a href='' className=''> <FaLinkedin style={{ fontSize: 30 }} /></a>
-          <a href='' className=''> <FaTwitterSquare style={{ fontSize: 30 }} /></a>
-          <a href='' className=''> <FaGithubSquare style={{ fontSize: 30 }} /></a>
-          <a href='' className=''> <FaFacebookSquare style={{ fontSize: 30 }} /></a>
+          <a href='https://cl.linkedin.com/' target='_blank' className=''> <FaLinkedin style={{ fontSize: 30 }} /></a>
+          <a href='https://twitter.com/?lang=es' target='_blank' className=''> <FaTwitterSquare style={{ fontSize: 30 }} /></a>
+          <a href='https://github.com/Alfredocrd/breaking_bad_project/tree/master' target='_blank' className=''> <FaGithubSquare style={{ fontSize: 30 }} /></a>
+          <a href='https://es-la.facebook.com/' target='_blank' className=''> <FaFacebookSquare style={{ fontSize: 30 }} /></a>
         </div>
         <div className="footer-left">
 

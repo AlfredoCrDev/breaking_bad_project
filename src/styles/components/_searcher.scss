@@ -1,60 +1,55 @@
+@import "./_base";
+
 .App {
-    display: grid;
-    grid-template-columns:1fr;
-    grid-gap: 3rem;
-    grid-auto-rows: minmax(100px, auto);
-    background-color: black;
-    background: linear-gradient(90deg,
-            rgba(9, 48, 9, 1) 0%,
-            rgba(13, 62, 16, 1) 35%,
-            rgba(31, 96, 50, 1) 100%);
-    padding: 40px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: black;
+  background: $color-fondo;
+  padding: 40px 30px;
 }
 
 .inputBuscar {
-    width: 50%;
-    height: 40px;
-    border-radius: 10px;
-    background-color: beige;
+  width: 50%;
+  height: 40px;
+  border-radius: 9999em;
+  background-color: beige;
+  font-size: 1.3em;
+  padding: 3px;
+}
 
-    :hover, :focus {
-        outline:none;
-    background: #ffffff;
-    }
+input:focus {
+  box-shadow: 0 0 0 1px white, 0 0 0 2px rgb(255, 255, 255);
 }
 
 .containerInput {
-    align-items: end;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    background: linear-gradient(90deg,
-            rgba(9, 48, 9, 1) 0%,
-            rgba(13, 62, 16, 1) 35%,
-            rgba(31, 96, 50, 1) 100%);
-    padding: 1rem;
+  align-items: end;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: $color-fondo;
+  padding: 1rem;
 }
 
 .css-1ri6ub7-MuiPaper-root-MuiCard-root {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 988px) {
+  .inputBuscar {
+    width: 100%;
+  }
 
-    .inputBuscar {
-        width: 100%;
-    }
-    
-    .containerInput {
-        padding-bottom: 15px;
-    }
-    
+  .containerInput {
+    padding-bottom: 15px;
+  }
 }
 
 @media (min-width: 768px) {
-    .App {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .App {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

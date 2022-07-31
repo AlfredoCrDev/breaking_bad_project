@@ -1,3 +1,7 @@
+@import './_base.scss';
+
+
+
 .container-home {
   background-image: url("./../../img/bg.jpg");
   background-position: center;
@@ -23,12 +27,7 @@ grid-template-areas:
     border-radius: 7px;
     color: white;
     font-size: 1.5rem;
-    background: linear-gradient(
-      90deg,
-      rgba(9, 48, 9, 1) 0%,
-      rgba(13, 62, 16, 1) 35%,
-      rgba(31, 96, 50, 1) 100%
-    );
+    background: $color-fondo;
     padding: 0.5rem 1rem;
 
   }
