@@ -12,7 +12,7 @@ Importante para que la app pueda funcionar, instala todas las dependencias del p
 ### `npm start` :checkered_flag:
 Para ejecutar la aplicacion.
 
-# Github Page :link:
+## Github Page :link:
 
 
 ### Contacto de los Creadores :e-mail: 
