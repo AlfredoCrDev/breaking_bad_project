@@ -1,17 +1,16 @@
-import React from 'react'
-import Banner from './Components/Banner'
-import Footer from './Components/Footer'
-import MainCharacters from './Components/MainCharactersItem'
-import Searcher from "./Components/Searcher"
+import React from "react";
+import Banner from "./Components/Banner";
+import Footer from "./Components/Footer";
+import Searcher from "./Components/Searcher";
 
 const Main = () => {
   return (
-   <>
-   <Banner />
-   <Searcher />
-   <Footer />
-   </>
-  )
-}
+    <>
+      <Banner />
+      <Searcher />
+      <Footer />
+    </>
+  );
+};
 
-export default Main
+export default Main;

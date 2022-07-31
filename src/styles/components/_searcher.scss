@@ -12,7 +12,15 @@
 }
 
 .inputBuscar {
-    width: 50% !important;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: beige;
+
+    :hover, :focus {
+        outline:none;
+    background: #ffffff;
+    }
 }
 
 .containerInput {
@@ -35,13 +43,13 @@
 @media (max-width: 988px) {
 
     .inputBuscar {
-        width: 100% !important;
+        width: 100%;
     }
-
+    
     .containerInput {
         padding-bottom: 15px;
     }
-
+    
 }
 
 @media (min-width: 768px) {
