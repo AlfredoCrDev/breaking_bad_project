@@ -1,5 +1,4 @@
 {
-  "homepage": "http://alfredocrd.github.io/breaking_bad_project",
   "name": "breaking-bad-project",
   "version": "0.1.0",
   "private": true,
@@ -46,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "sass": "^1.54.0"
   }
 }
